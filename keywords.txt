@@ -1,0 +1,6 @@
+WTV020SD	KEYWORD1
+reset	KEYWORD2
+triggerVoice	KEYWORD2
+setVolume	KEYWORD2
+pauseResume	KEYWORD2
+stop	KEYWORD2
