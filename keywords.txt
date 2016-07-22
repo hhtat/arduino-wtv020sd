@@ -4,3 +4,4 @@ triggerVoice	KEYWORD2
 setVolume	KEYWORD2
 pauseResume	KEYWORD2
 stop	KEYWORD2
+isBusy	KEYWORD2

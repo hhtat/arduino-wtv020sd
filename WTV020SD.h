@@ -11,6 +11,7 @@ public:
   void setVolume(int level);
   void pauseResume();
   void stop();
+  bool isBusy();
 
 private:
   void init();

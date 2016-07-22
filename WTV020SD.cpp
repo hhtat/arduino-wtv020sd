@@ -29,7 +29,7 @@ void WTV020SD::triggerVoice(int fileNumber, bool waitForBusy)
   if (waitForBusy)
   {
     delay(40);
-    while (digitalRead(busyPin) == HIGH) ;
+    while (isBusy()) ;
   }
 }
 
@@ -46,6 +46,11 @@ void WTV020SD::pauseResume()
 void WTV020SD::stop()
 {
   sendData(0xFFFF);
+}
+
+bool WTV020SD::isBusy()
+{
+  return digitalRead(busyPin) == HIGH;
 }
 
 void WTV020SD::init()
