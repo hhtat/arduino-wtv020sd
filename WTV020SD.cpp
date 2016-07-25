@@ -30,6 +30,7 @@ void WTV020SD::triggerVoice(int fileNumber, bool waitForBusy)
   {
     delay(40);
     while (isBusy()) ;
+    delay(10);
   }
 }
 
